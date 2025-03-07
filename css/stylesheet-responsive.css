@@ -401,7 +401,7 @@ h3{
 		display: block;
 		font-family: monospace;
 		white-space: pre;
-		font-size:0.6em;
+		font-size:0.6em.;
 		max-width:100%;
 	}
 }
@@ -639,7 +639,7 @@ h3{
 		display: block;
 		font-family: monospace;
 		white-space: pre;
-		font-size:0.8em;
+		font-size:0.8em.;
 		max-width:100%;
 	}
 	.sitecode{
