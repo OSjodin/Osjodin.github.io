@@ -7,7 +7,7 @@
 		<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
 		 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-		<link rel="stylesheet" href="https://osjodin.github.io/css/stylesheet-responsive.css">
+		<link rel="stylesheet" href="css/stylesheet-responsive.css">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1">
       	<meta charset="utf-8">
 				<script src="js\mainjs.js">
@@ -27,16 +27,16 @@
 	<div class="body-padding-top"></div>
 	<div class="body-padding-left bodyfloat"></div>
 	<div id="body-main" class="bodyfloat">
-		<div id="PC-menu-container"><div class="menu" id="menu-ID-1" onclick="SlideItem(1);" style="transform: translateX(0%);">
-						<img class="menu-img" id="menu-img-ID-1" src="img/aboutme.png" style="min-height: 435px; min-width: 384px; filter: grayscale(1); transform: scale(1); cursor: pointer;">
-					</div><div class="menu" id="menu-ID-2" onclick="SlideItem(2);" style="transform: translateX(0%);">
-						<img class="menu-img" id="menu-img-ID-2" src="img/behindthescenes4.png" style="min-height: 435px; min-width: 384px; filter: grayscale(1); transform: scale(1); cursor: pointer;">
-					</div><div class="menu" id="menu-ID-3" onclick="SlideItem(3);" style="transform: translateX(0%);">
-						<img class="menu-img" id="menu-img-ID-3" src="img/blog.png" style="min-height: 435px; min-width: 384px; filter: grayscale(1); transform: scale(1); cursor: pointer;">
-					</div><div class="menu" id="menu-ID-4" onclick="SlideItem(4);" style="transform: translateX(0%);">
-						<img class="menu-img" id="menu-img-ID-4" src="img/tools.png" style="min-height: 435px; min-width: 384px; filter: grayscale(1); transform: scale(1); cursor: pointer;">
+		<div id="PC-menu-container"><div class="menu" id="menu-ID-1" onclick="SlideItem(1);" style="transform: translateX(400%);">
+						<img class="menu-img" id="menu-img-ID-1" src="img/aboutme.png" alt="menu image number 1" style="min-height: 435px; min-width: 384px; filter: grayscale(0); transform: scale(1.1); cursor: default;">
+					</div><div class="menu" id="menu-ID-2" onclick="SlideItem(2);" style="transform: translateX(300%);">
+						<img class="menu-img" id="menu-img-ID-2" src="img/behindthescenes4.png" alt="menu image number 2" style="min-height: 435px; min-width: 384px; filter: grayscale(0); transform: scale(1.1); cursor: default;">
+					</div><div class="menu" id="menu-ID-3" onclick="SlideItem(3);" style="transform: translateX(200%);">
+						<img class="menu-img" id="menu-img-ID-3" src="img/blog.png" alt="menu image number 3" style="min-height: 435px; min-width: 384px; filter: grayscale(0); transform: scale(1.1); cursor: default;">
+					</div><div class="menu" id="menu-ID-4" onclick="SlideItem(4);" style="transform: translateX(100%);">
+						<img class="menu-img" id="menu-img-ID-4" src="img/tools.png" alt="menu image number 4" style="min-height: 435px; min-width: 384px; filter: grayscale(0); transform: scale(1.1); cursor: default;">
 					</div><div class="menu" id="menu-ID-5" onclick="SlideItem(5);" style="transform: translateX(0%);">
-						<img class="menu-img" id="menu-img-ID-5" src="img/Contact.png" style="min-height: 435px; min-width: 384px; filter: grayscale(1); transform: scale(1); cursor: pointer;">
+						<img class="menu-img" id="menu-img-ID-5" src="img/Contact.png" alt="menu image number 5" style="min-height: 435px; min-width: 384px; filter: grayscale(0); transform: scale(1.1); cursor: default;">
 					</div>		
 		</div>
 		<div id="mobile-landing-page">
@@ -53,7 +53,7 @@
 			</p>
 			<p>
 			For now, might I suggest the <a href="#" onclick="javascript:SlideMobile(1);">About Me</a> option, or perhaps 
-			<a href="#" onclick="javascript:SlideMobile(2)">take a peak on the code,</a> You can always find your way back here
+			<a href="#" onclick="javascript:SlideMobile(2)">take a peak on a few projects,</a> You can always find your way back here
 			</p>
 			<p>
 			Every single page from the menu you've visited are nothing but blank canvas for however you
@@ -71,25 +71,26 @@
 			
 		</div>
 	</div>
-</div>		<nav>
+</div>
+		<nav>
 		<div id="menu-bar">
-			<ul><li class="menu-text" id="menu-text-1" onclick="SlideMobile(1);" style="transform: translateX(0%);">
+			<ul><li class="menu-text" id="menu-text-1" onclick="SlideMobile(1);" style="transform: translateX(400%);">
 						<b>About me</b>
-					</li><li class="menu-text" id="menu-text-2" onclick="SlideMobile(2);" style="transform: translateX(0%);">
-						<b>Portfolio</b>
-					</li><li class="menu-text" id="menu-text-3" onclick="SlideMobile(3);" style="transform: translateX(0%);">
+					</li><li class="menu-text" id="menu-text-2" onclick="SlideMobile(2);" style="transform: translateX(300%);">
+						<b>Projects</b>
+					</li><li class="menu-text" id="menu-text-3" onclick="SlideMobile(3);" style="transform: translateX(200%);">
 						<b>Blog</b>
-					</li><li class="menu-text" id="menu-text-4" onclick="SlideMobile(4);" style="transform: translateX(0%);">
-						<b>Web design tools</b>
+					</li><li class="menu-text" id="menu-text-4" onclick="SlideMobile(4);" style="transform: translateX(100%);">
+						<b>My skills</b>
 					</li><li class="menu-text" id="menu-text-5" onclick="SlideMobile(5);" style="transform: translateX(0%);">
 						<b>Contact</b>
 					</li>			</ul>
 		</div>
 		</nav>
-		<div class="page-content-container"><div class="page-head page-first" id="page-head-ID-1" style="transition: all 0s ease 0s; transform: translateX(-125%);"><div class="page-nav">
+		<div class="page-content-container"><div class="page-head page-first" id="page-head-ID-1" style="transition: all 0s ease 0s; transform: translateX(0%);"><div class="page-nav">
 	<div class="arrowright" onclick="NextItem();">
 		<img src="img/Arrow_50x50.png">
-		Portfolio	</div>
+		Projects	</div>
 	<div class="home" onclick="Menu();">
 		<img src="img/home_105x100.png">
 		Home	</div>
@@ -100,11 +101,12 @@
 <div class="page-title">
 						<div class="vertical-center"><h1>Hello there</h1></div>
 					</div>
-				</div><div class="page-slider" id="page-ID-1" style="transition: all 0s ease 0s; transform: translateX(-125%);"><article class="page-content" id="page-content-ID-1"><p>
-	I'm Hans Sjödin, a passionate web designer and developer from Sweden. At 29 years old,
+				</div><div class="page-slider" id="page-ID-1" style="transition: all 0s ease 0s; transform: translateX(0%);"><main><article class="page-content" id="page-content-ID-1"><h2>Hello World</h2>
+<p>
+	</p><h3>I'm Hans Sjödin,</h3> a passionate web designer and developer from Sweden. At 29 years old,
 	I have dedicated myself to create appealing, functional, and responsive websites
 	that leave a lasting impression.
-</p>
+<p></p>
 
 <p>
 With a love for coding and creating beautiful solutions to whatever problem comes my way,
@@ -112,8 +114,9 @@ I'm continuously learning and staying up-to-date with the latest trends and tech
 This allows me to bring fresh ideas and innovative solutions to every project I undertake.
 I am proficient in HTML, CSS, JavaScript, PHP, SQL, and also knowledgeable in Python, VisualBasic, Assembly, C++ and MATLAB.
 Always ready and willing to take on new exciting challenges.
-</p>
+</p><p></p>
 
+<h2>How do we do this?</h2>
 <p>
 I believe the best results are achieved when working together. I enjoy engaging with clients, 
 understanding their goals, and translating their visions into reality. 
@@ -122,13 +125,14 @@ understanding their goals, and translating their visions into reality.
 <p>
 When I'm not immersed infront of a screen, you can find me on the disc-golf course, or rather,
 outside the course where I often end up spending way too much time search for my missing discs.
-</p>
+</p><p></p>
 
+<h3>Thank you</h3>
 <p>
-Thank you for visiting my website, and feel free to poke around. If you have any inquiries or would like to discuss a project,
+for visiting my website, and feel free to poke around. If you have any inquiries or would like to discuss a project,
 don't hesitate to reach out. I'm eager to hear about your ideas and how we may work together to create something we're both proud of.
 </p>
-<div class="buffer"></div></article></div><div class="page-head " id="page-head-ID-2" style="transition: all 0s ease 0s; transform: translateX(0%);"><div class="page-nav">
+<div class="buffer"></div></article></main></div><div class="page-head " id="page-head-ID-2" style="transition: all 0s ease 0s; transform: translateX(0%);"><div class="page-nav">
 	<div class="arrowright" onclick="NextItem();">
 		<img src="img/Arrow_50x50.png">
 		Blog	</div>
@@ -140,10 +144,11 @@ don't hesitate to reach out. I'm eager to hear about your ideas and how we may w
 		About me	</div>
 </div>
 <div class="page-title">
-						<div class="vertical-center"><h1>BottleBot</h1></div>
+						<div class="vertical-center"><h1>My Projects</h1></div>
 					</div>
-				</div><div class="page-slider" id="page-ID-2" style="transition: all 0s ease 0s; transform: translateX(0%);"><article class="page-content" id="page-content-ID-2"><p>
-	A fun and recent project has been creating what I would call, the "BottleBot", it comes as an extension to a particular brand of UV Printer and its purpose is to automate the task of printing multiple bottles. A task normally done manually by hand for this type of printer. 
+				</div><div class="page-slider" id="page-ID-2" style="transition: all 0s ease 0s; transform: translateX(0%);"><article class="page-content" id="page-content-ID-2"><h2>BottleBot</h2>
+<p>
+A fun and recent project has been creating what I would call, the "BottleBot", it comes as an extension to a particular brand of UV Printer and its purpose is to automate the task of printing multiple bottles. A task normally done manually by hand for this type of printer. 
 </p>
 <p>
 	Took about 3 month to make and the end result is a prototype that can communicate with the printer and autonomously print up to 20 bottles in one batch. The process was quite interesting and as the sole developer of the system, I had quite a lot on my plate. Everything from the code doing what it is supposed to do, building the physical platform, to sorting out the communication between Printer and Robot.
@@ -157,17 +162,36 @@ One of those things that sounds so easy, but actually making it work is a differ
 <p>
 After dealing with that and putting in significant work, essentially re-working how the robot accept commands, writing new ones to replace the existing, we now had a stop button that once pressed would stop, and a separate start button that would make it go again, from where it left off. I even took the time to "idiot proof" the function to make sure I couldn't make any mistakes. Because a mistake at the wrong time, could cost a very significant amount of money should the printer become damaged.
 </p>
-
+<p></p>
+<h2>Analasys</h2>
+<p>
+Aside from the robot going about its business placing bottles inside printers, I did create a tool for analyzing the various data points coming from the printer, most typical would be the UV leakage, as the ink is put on the object, you have an UV lamp hardening the ink, so preferably you wouldn't want this UV light to hit the head of the printer as that would harden the ink inside the print-head. Which would be really bad.
+</p>
+<p>
+And the idea was that customers would be able to use the software the identify when this occurs and by how much, possibly to spot operators whom might need more training in certain areas or diagnose certain problems with materials, it would also derive data from the printer by seeing how many jobs have been completed, average time of them, etc etc, just lots of fun numbers to crunch to analyze the printer and operators. Unfortunately it didn't come fully to fruition as communication broke down. And this specific project fell into the void.
+</p><p></p>
+<h2>This website</h2>
+<p>
+Well, I do suppose that this very website is a bit of a project, it's a new take on how a site might be displayed and constructed. Traditionally you might have one file.html per side, flipping and linking through like index.html and aboutme.html, portfolio.html etc. Now there's nothing wrong with that. but I wanted to try something different, We often see a lot of websites now that also feature a doom-scrolling type of style, where everything is just scrolled too and links might be handled internally with hashtags or some neat JS to scroll to elements. This one is neither. It's layered in the Z direction, and by flipping through sides, you're simply just moving the sub-sites out of view. 
+</p>
+<p>
+</p><h3>But why?</h3>
+You might ask, and I truly don't have a good answer, too see if I could? Try something new maybe. Experiment and see if it worked the way I thought it would, reach new challenges and overcome them with, let's be honest, over-engineered solutions for a problem that shouldn't exist in the first place. Maybe the answer to that question is just simply, for the fun of it!
+<p></p>
+<p>
+Since everything is more or less on the "same" page and is handled in a Z+X -direction rather than Y, links from the menu are handled by JS, I hope this is okay, trust me when I say I do know how to create normal links as well, speaking of which, there was an assignment to make sure we add something neat from a third party framework such as bootstrap, so to kill two birds with one stone here's a neat little button that is also a "real" link.
+</p>
+<a href="https://google.se" class="btn btn-primary btn-lg active" role="button" aria-pressed="true" target="_blank">Link to google</a>
 <div class="buffer"></div></article></div><div class="page-head " id="page-head-ID-3" style="transition: all 0s ease 0s; transform: translateX(0%);"><div class="page-nav">
 	<div class="arrowright" onclick="NextItem();">
 		<img src="img/Arrow_50x50.png">
-		Web design tools	</div>
+		My skills	</div>
 	<div class="home" onclick="Menu();">
 		<img src="img/home_105x100.png">
 		Home	</div>
 	<div class="arrowleft" onclick="PreviousItem()">
 		<img src="img/Arrow2_50x50.png">
-		Portfolio	</div>
+		Projects	</div>
 </div>
 <div class="page-title">
 						<div class="vertical-center"><h1>Our latest, your first!</h1></div>
@@ -223,7 +247,8 @@ After dealing with that and putting in significant work, essentially re-working 
       </div><hr>
       <!-- Additional posts go here -->
     </div>
- </section><div class="buffer"></div></article></div><div class="page-head " id="page-head-ID-4" style="transition: all 0s ease 0s; transform: translateX(0%);"><div class="page-nav">
+ </section>
+<div class="buffer"></div></article></div><div class="page-head " id="page-head-ID-4" style="transition: all 0s ease 0s; transform: translateX(0%);"><div class="page-nav">
 	<div class="arrowright" onclick="NextItem();">
 		<img src="img/Arrow_50x50.png">
 		Contact	</div>
@@ -235,46 +260,20 @@ After dealing with that and putting in significant work, essentially re-working 
 		Blog	</div>
 </div>
 <div class="page-title">
-						<div class="vertical-center"><h1>Why hire a web developer?</h1></div>
+						<div class="vertical-center"><h1>So what can I do?</h1></div>
 					</div>
-				</div><div class="page-slider" id="page-ID-4" style="transition: all 0s ease 0s; transform: translateX(0%);"><article class="page-content" id="page-content-ID-4"><p>
-	Content Management System (CMS) tools such as <b>Wordpress, Joomla, Squarespace</b> &amp; many more, have revolutionized the way websites and online platforms are created and managed, and made web design more available. I've worked with most of them, and there are so many great pre build functions. <b>However</b>, it is important to recognize that CMS tools also come with their fair share of disadvantages. 
-</p>
+				</div><div class="page-slider" id="page-ID-4" style="transition: all 0s ease 0s; transform: translateX(0%);"><article class="page-content" id="page-content-ID-4"><h2>Where to begin</h2>
 <p>
-	</p><h3>1. Limited Customization:</h3>
-	<p class="tab1 top0">
-		One of the primary disadvantages of CMS tools is the limited customization options they offer. While CMS platforms provide a variety of templates and themes, they often restrict the ability to customize the design and layout extensively. Users may find themselves constrained by the predetermined options and struggle to achieve a unique and tailored website appearance.
-	</p>
+</p><h3>I'd like to think</h3> I'm a decent developer in most languages, while I cannot claim major proficiency in all of them, I do find myself quite capable in PHP, JavaScript, Python and MATLAB,
+I've seen and done things in C/C++ and Java as well, although that was many, many years ago. I have however found that it's often not the language in itself, but rather the method. When I started
+the project with the Robot, I had barley even touched Python, but after a few days of getting used to and seeing the structure, it felt like second nature and things just went on.
 <p></p>
 <p>
-	</p><h3>2. Performance Limitations:</h3>
-	<p class="tab1 top0">
-		CMS tools can introduce performance limitations, particularly when it comes to website speed and responsiveness. The additional layers of code and plugins required by CMS platforms can slow down website loading times. Moreover, as CMS tools are designed to accommodate a wide range of functionalities, they may generate bloated and inefficient code, negatively impacting overall performance.
-	</p>
-<p></p>
-<p>	
-	</p><h3>3. Security Vulnerabilities:</h3>
-	<p class="tab1 top0">
-		While CMS tools aim to provide secure environments, they can be susceptible to security vulnerabilities. Hackers often target widely-used CMS platforms, exploiting weaknesses in their code or plugins. Failure to promptly update CMS software or install security patches can leave websites vulnerable to cyber attacks, potentially resulting in data breaches or defacement.
-	</p>
-<p></p>
+</p><h3>I find myself quite capable</h3> in the backend of things, sometimes it's difficult to know exactly where to start, but once you do, you get a grip and it just continues forward, the front end and design aspect of things doesn't come quite as easy to me. Like most people I can look at something and notice that something seems wrong or a little bit off, but I can't really tell what that is, quite frankly, it's a miracle this site looks as decent as it does.
+<p></p><p></p>
+<h2>And that's primarily it</h2>
 <p>
-	</p><h3>4. Learning Curve and Dependency:</h3>
-	<p class="tab1 top0">
-		CMS tools, despite their user-friendly interfaces, often have a steep learning curve. Users must familiarize themselves with the platform's functionalities and sometimes even learn basic coding concepts. Additionally, reliance on CMS tools can create a dependency, making it difficult to transition to a different system or to implement custom functionalities not supported by the CMS platform.
-	</p>
-<p></p>
-<p>
-	</p><h3>5. Limitations in Scalability:</h3>
-	<p class="tab1 top0">
-		As websites grow and expand, CMS tools may present limitations in terms of scalability. Handling large volumes of content or accommodating complex e-commerce requirements can strain the capabilities of some CMS platforms. Scaling up the website's infrastructure or implementing custom features may require significant modifications to the CMS codebase, leading to potential compatibility issues and increased development costs.
-	</p>
-<p></p>
-<p>
-	</p><h3>6. Cost and Licensing:</h3>
-	<p class="tab1 top0">
-		While many CMS tools offer free or open-source versions, certain advanced features and functionalities may come at a cost. Licensing fees for premium CMS versions or additional plugins can accumulate over time, increasing the overall expenses associated with using CMS tools. Small businesses or individuals on a tight budget may find these costs prohibitive.
-	</p>
+</p><h3>So without this part turning into a novel,</h3> my skills lie mostly in the development of functions and features, be it for a robot that is to autonomously insert and remove bottles from a printer, or functions for a website, while this is just one big HTML file in GitHub, there is quite a lot of PHP behind it to create that HTML file. I have ultimately decided to include them in a folder called "etc", as I am putting this project on the shelf for now, as I've decided to take what I learned here, and start another website-project with better functions and features, including an actual SQL Database. And trying to incorporate semantic HTML in a better way from the start while still maintaining the dynamic aspect
 <p></p>
 <div class="buffer"></div></article></div><div class="page-head page-last" id="page-head-ID-5" style="transition: all 0s ease 0s; transform: translateX(0%);"><div class="page-nav">
 	<div class="arrowright" onclick="NextItem();">
@@ -285,7 +284,7 @@ After dealing with that and putting in significant work, essentially re-working 
 		Home	</div>
 	<div class="arrowleft" onclick="PreviousItem()">
 		<img src="img/Arrow2_50x50.png">
-		Web design tools	</div>
+		My skills	</div>
 </div>
 <div class="page-title">
 						<div class="vertical-center"><h1>Contact Information</h1></div>
