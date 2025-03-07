@@ -60,6 +60,10 @@ a:visited{
 	left:0;
 	overflow:hidden;
 }
+h3{
+  font-size:1.5rem;
+  display:inline;
+}
 .buffer{
 		width:100%;
 		height:200px;
@@ -333,7 +337,7 @@ a:visited{
 		max-height:100%;
 		margin:10px auto auto auto;
 		background-color: var(--main-bg);
-		
+		color:#ffffff;
 		overflow-y:scroll;
 	}
 	
@@ -543,7 +547,7 @@ a:visited{
 		font-family: var(--main-font-face);
 		font-size: var(--main-font-size);
 		color: var(--txt-color);
-		/*background: var(--main-bg-tile);*/
+		#background: var(--main-bg-tile);
 		
 	}
 	.page-head{
