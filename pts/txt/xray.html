@@ -1,0 +1,36 @@
+<h2>BottleBot</h2>
+<p>
+A fun and recent project has been creating what I would call, the "BottleBot", it comes as an extension to a particular brand of UV Printer and its purpose is to automate the task of printing multiple bottles. A task normally done manually by hand for this type of printer. 
+</p>
+<p>
+	Took about 3 month to make and the end result is a prototype that can communicate with the printer and autonomously print up to 20 bottles in one batch. The process was quite interesting and as the sole developer of the system, I had quite a lot on my plate. Everything from the code doing what it is supposed to do, building the physical platform, to sorting out the communication between Printer and Robot.
+</p>
+<p>
+First step was to test the limits of the Robot, understand what it can, and can't do. After that I started building the underlying framework for moving it. Hardcoded in certain positions and watching as the Robot performs the movements. A stop button was installed for safety, and an emergency stop button, difference between them being that one simply halts the robot in place, while the other cuts off the power completely. As the API worked with the robot, there was no pre-existing way of continuing operations after a stop has occurred, sounds easy enough, just make it continue to do what it did before you pressed stop... yeah...
+</p>
+<p>
+One of those things that sounds so easy, but actually making it work is a different matter, the stop function is a pre-existing feature where you set a 24v input port as the emergency stop, and the moment it receives a signal the stop is triggered, and an error is raised, the robot will not do anything until the error flag is removed. That signal and flag supersedes everything else, the code will keep running, and once the next move-command is sent, you will get an error in return as the robot cannot perform the motion.
+</p>
+<p>
+After dealing with that and putting in significant work, essentially re-working how the robot accept commands, writing new ones to replace the existing, we now had a stop button that once pressed would stop, and a separate start button that would make it go again, from where it left off. I even took the time to "idiot proof" the function to make sure I couldn't make any mistakes. Because a mistake at the wrong time, could cost a very significant amount of money should the printer become damaged.
+</p>
+<p></p>
+<h2>Analasys</h2>
+<p>
+Aside from the robot going about its business placing bottles inside printers, I did create a tool for analyzing the various data points coming from the printer, most typical would be the UV leakage, as the ink is put on the object, you have an UV lamp hardening the ink, so preferably you wouldn't want this UV light to hit the head of the printer as that would harden the ink inside the print-head. Which would be really bad.
+</p>
+<p>
+And the idea was that customers would be able to use the software the identify when this occurs and by how much, possibly to spot operators whom might need more training in certain areas or diagnose certain problems with materials, it would also derive data from the printer by seeing how many jobs have been completed, average time of them, etc etc, just lots of fun numbers to crunch to analyze the printer and operators. Unfortunately it didn't come fully to fruition as communication broke down. And this specific project fell into the void.
+</p><p></p>
+<h2>This website</h2>
+<p>
+Well, I do suppose that this very website is a bit of a project, it's a new take on how a site might be displayed and constructed. Traditionally you might have one file.html per side, flipping and linking through like index.html and aboutme.html, portfolio.html etc. Now there's nothing wrong with that. but I wanted to try something different, We often see a lot of websites now that also feature a doom-scrolling type of style, where everything is just scrolled too and links might be handled internally with hashtags or some neat JS to scroll to elements. This one is neither. It's layered in the Z direction, and by flipping through sides, you're simply just moving the sub-sites out of view. 
+</p>
+<p>
+<h3>But why?</h3>
+You might ask, and I truly don't have a good answer, too see if I could? Try something new maybe. Experiment and see if it worked the way I thought it would, reach new challenges and overcome them with, let's be honest, over-engineered solutions for a problem that shouldn't exist in the first place. Maybe the answer to that question is just simply, for the fun of it!
+</p>
+<p>
+Since everything is more or less on the "same" page and is handled in a Z+X -direction rather than Y, links from the menu are handled by JS, I hope this is okay, trust me when I say I do know how to create normal links as well, speaking of which, there was an assignment to make sure we add something neat from a third party framework such as bootstrap, so to kill two birds with one stone here's a neat little button that is also a "real" link.
+</p>
+<a href="https://google.se" class="btn btn-primary btn-lg active" role="button" aria-pressed="true" target="_blank">Link to google</a>

@@ -1,0 +1,45 @@
+<b><code class="php">&lt;?php</code> <code class="var">$currentPage</code>++ <code class="php">?&gt;</code></b>
+<code class="tag">&lt;div</code> <b>class=<code class="text">"page-nav"</code></b>&gt;</code>
+	<code class="tag">&lt;div</code> <b>class=<code class="text">"arrowright"</code> onclick=<code class="text">"NextItem(</code><code class="php">&lt;?php</code> <code class="func">echo</code>(<code class="var">$currentPage</code>); <code class="php">?&gt;</code>);"&gt;</code></b>
+		<code class="tag">&lt;img</code> <b>src="<code class="php">&lt;?php</code> <code class="func">echo</code>(<code class="var">$navArrowR</code>); <code class="php">?&gt;</code><code class="text">"</code></b>&gt;</code>
+		<b><code class="php">&lt;?php</code> <code class="func">echo</code>(<code class="func">isset</code>(<code class="var">$textMenu</code>[<code class="var">$currentPage</code>+<code class="int">1</code>])) ? <code class="var">$textMenu</code>[<code class="var">$currentPage</code>+<code class="int">1</code>] : ''; <code class="php">?&gt;</code></b>
+	<code class="tag">&lt;/div&gt;</code>
+	<code class="tag">&lt;div</code> <b>class="home" onclick="Home();"</b>&gt;</code>
+		<code class="tag">&lt;img</code> <b>src="<code class="php">&lt;?php</code> <code class="func">echo</code>(<code class="var">$navHome</code>); <code class="php">?&gt;</code>"</b>&gt;</code>
+		<b><code class="php">&lt;?php</code> <code class="func">echo</code>(<code class="var">$homeText</code>); <code class="php">?&gt;</code></b>
+	<code class="tag">&lt;/div&gt;</code>
+	<code class="tag">&lt;div</code> <b>class="arrowleft" onclick=<code class="text">"PreviousItem(</code><code class="php">&lt;?php</code> <code class="func">echo</code>(<code class="var">$currentPage</code>); <code class="php">?&gt;</code>)"</b>&gt;</code>
+		<code class="tag">&lt;img</code> <b>src="<code class="php">&lt;?php</code> <code class="func">echo</code>(<code class="var">$navArrowL</code>); <code class="php">?&gt;</code>"</b>&gt;</code>
+		<b><code class="php">&lt;?php</code> <code class="func">echo</code>(<code class="func">isset</code>(<code class="var">$textMenu</code>[<code class="var">$currentPage</code>-<code class="int">1</code>])) ? <code class="var">$textMenu</code>[<code class="var">$currentPage</code>-<code class="int">1</code>] : ''; <code class="php">?&gt;</code></b>
+	<code class="tag">&lt;/div&gt;
+&lt;/div&gt;</code>
+
+
+<pre class="sitecode">
+<code class="tag">&lt;body&gt;</code>
+    <code class="tag">&lt;div</code> <b>id=<code class="text">"body-main"</code></b><code class="tag">&gt;</code><b><code class="php">&lt;?PHP</code>
+        <code class="func">foreach</code>(<code class="var">$imgMenu</code> <code class="func">as</code> <code class="var">$i</code>=&gt;<code class="var">$val</code>){
+            <code class="func">echo</code>(</b><code class="text">"&lt;div class='menu' id='menu-ID-<b>$i</b>' onclick='SlideItem(<b>$i</b>);'&gt;
+                &lt;img class='menu-img' id='menu-img-ID-<b>$i</b>' src='<b>$val</b>'&gt;
+                &lt;/div&gt;"</code>);
+        }<code class="php">?&gt;</code>		
+        <code class="tag">&lt;div</code> <b>id=<code class="text">"menu-bar"</code></b><code class="tag">&gt;</code><b><code class="php">&lt;?PHP</code>
+            <code class="func">foreach</code>(<code class="var">$textMenu</code> <code class="func">as</code> <code class="var">$i</code>=&gt;<code class="var">$val</code>){
+                <code class="func">echo</code>(</b><code class="text">"&lt;div class='menu-text' id='menu-text-<b>$i</b>'&gt;<b>$val</b>&lt;/div&gt;"</code><b>);
+            }<code class="php">?&gt;</code></b>
+        <code class="tag">&lt;/div&gt;
+        &lt;div</code> <b>class=<code class="text">"page-content-container"</code></b>&gt;<b><code class="php">&lt;?PHP</code>
+            <code class="func">foreach</code>(<code class="var">$textPage</code> <code class="func">as</code> <code class="var">$i</code>=&gt;<code class="var">$val</code>){
+                <code class="var">$i</code> === <code class="func">array_key_first</code>(<code class="var">$textPage</code>) ? <code class="var">$uniqueCase</code> = </b><code class="text">"page-first"</code> <b>: <code class="var">$uniqueCase</code> = </b><code class="text">""</code><b>;</b>
+                <b><code class="func">if</code>(<code class="var">$i</code> === <code class="func">array_key_last</code>(<code class="var">$textPage</code>)) <code class="var">$uniqueCase</code> = </b><code class="text">"page-last"</code><b>;
+                <code class="func">echo</code>(</b><code class="text">"&lt;div class='page-slider' id='page-ID-<b>$i</b>'&gt;
+                    &lt;div class='page-content <b>$uniqueCase</b>' id='page-content-ID-<b>$i</b>'&gt;"</code><b>);
+                        <code class="func">include</code>(<code class="var">$pageNav</code>);
+                        <code class="func">include</code>(<code class="var">$val</code>);
+                <code class="func">echo</code>(</b><code class="text">"&lt;div class='buffer'&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;"</code><b>);
+            }<code class="php">?&gt;</code></b>
+        <code class="tag">&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;script</code> <b>type=<code class="text">"text/javascript"</code></b>&gt;SetWH<code class="func"><b>();</b></code><code class="tag">&lt;/script&gt;
+&lt;/body&gt;</code>
+</pre>
